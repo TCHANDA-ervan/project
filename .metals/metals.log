@@ -1,0 +1,720 @@
+2024.02.07 20:15:27 INFO  Started: Metals version 1.2.1 in folders '/home/ubuntu/Desktop/project' for client Visual Studio Code 1.85.1.[0m
+2024.02.07 20:15:28 INFO  time: initialize in 0.16s[0m
+20:15:30.865 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+20:15:30.870 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+20:15:30.871 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+20:15:30.874 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+20:15:30.874 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+20:15:30.874 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+20:15:30.874 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+20:15:30.874 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+20:15:30.874 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/ubuntu/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+20:15:30.878 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+20:15:30.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+20:15:30.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+20:15:30.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+20:15:30.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+20:15:30.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+20:15:30.896 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:15:30.896 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+20:15:30.897 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+20:15:30.898 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+20:15:30.898 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+20:15:31.705 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/ubuntu/Desktop/project/.metals/metals (H2 2.2)
+20:15:31.705 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+20:15:31.705 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+20:15:31.709 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+20:15:31.710 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+20:15:31.774 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+20:15:31.785 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+20:15:31.785 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:15:31.895 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+20:15:31.902 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:15:31.915 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+20:15:31.915 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:15:31.915 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+20:15:31.915 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+20:15:31.916 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+20:15:31.917 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+20:15:31.917 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:15:31.917 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+20:15:31.917 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+20:15:31.918 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+20:15:31.933 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+20:15:31.955 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.059s)
+20:15:31.971 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+20:15:31.978 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+20:15:32.017 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+20:15:32.047 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+20:15:32.048 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+20:15:32.048 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+20:15:32.087 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.087 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+20:15:32.123 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.124 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+20:15:32.131 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+20:15:32.131 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+20:15:32.133 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+20:15:32.134 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+20:15:32.135 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+20:15:32.136 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+20:15:32.137 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+20:15:32.162 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+20:15:32.172 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+20:15:32.177 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+20:15:32.185 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.185 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+20:15:32.187 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.187 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+20:15:32.188 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.189 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+20:15:32.189 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.189 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+20:15:32.190 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.191 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+20:15:32.193 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:15:32.233 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+20:15:32.244 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+20:15:32.244 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+20:15:32.245 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+20:15:32.245 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+20:15:32.246 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.246 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+20:15:32.249 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:15:32.252 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+20:15:32.254 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+20:15:32.255 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+20:15:32.256 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+20:15:32.259 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+20:15:32.263 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+20:15:32.263 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+20:15:32.273 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.273 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+20:15:32.332 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.333 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+20:15:32.335 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.335 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+20:15:32.339 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:15:32.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+20:15:32.355 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+20:15:32.356 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+20:15:32.356 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+20:15:32.357 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+20:15:32.358 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:15:32.358 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+20:15:32.365 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:15:32.526 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.109s)
+20:15:32.692 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 26 of 102M
+2024.02.07 20:15:34 WARN  no build tool detected in workspace '/home/ubuntu/Desktop/project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2024.02.07 20:15:34 WARN  Build server is not auto-connectable.[0m
+févr. 07, 2024 8:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2
+févr. 07, 2024 8:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1
+févr. 07, 2024 8:15:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6
+2024.02.07 20:15:51 INFO  no build target found for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2024.02.07 20:16:03 INFO  time: code lens generation in 27s[0m
+2024.02.07 20:22:16 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala[0m
+2024.02.07 20:38:09 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala[0m
+févr. 07, 2024 8:45:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 63
+2024.02.07 21:57:41 INFO  Detected new build tool in /home/ubuntu/Desktop/project[0m
+2024.02.07 21:57:41 WARN  no build tool detected in workspace '/home/ubuntu/Desktop/project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2024.02.07 21:57:41 WARN  Build server is not auto-connectable.[0m
+2024.02.07 21:57:41 INFO  Detected new build tool in /home/ubuntu/Desktop/project[0m
+2024.02.07 21:57:41 WARN  no build tool detected in workspace '/home/ubuntu/Desktop/project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2024.02.07 21:57:42 WARN  Build server is not auto-connectable.[0m
+févr. 07, 2024 10:01:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2024.02.07 23:52:15 INFO  Started: Metals version 1.2.1 in folders '/home/ubuntu/Desktop/project' for client Visual Studio Code 1.85.1.
+2024.02.07 23:52:15 INFO  time: initialize in 0.38s
+23:52:22.051 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+23:52:22.057 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+23:52:22.057 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+23:52:22.064 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+23:52:22.065 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+23:52:22.065 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+23:52:22.065 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+23:52:22.067 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+23:52:22.071 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/ubuntu/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+23:52:22.078 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+23:52:22.079 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+23:52:22.079 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+23:52:22.079 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+23:52:22.079 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+23:52:22.080 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+23:52:22.089 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+23:52:22.090 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+23:52:22.094 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+23:52:22.095 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+23:52:22.095 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+23:52:22.199 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/ubuntu/Desktop/project/.metals/metals (H2 2.2)
+23:52:22.199 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+23:52:22.199 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+23:52:22.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+23:52:22.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+23:52:22.210 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+23:52:22.212 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+23:52:22.213 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+23:52:22.227 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+23:52:22.233 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+23:52:22.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+23:52:22.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+23:52:22.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+23:52:22.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+23:52:22.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+23:52:22.250 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+23:52:22.250 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+23:52:22.250 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+23:52:22.250 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+23:52:22.250 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+23:52:22.275 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.047s)
+23:52:22.280 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+23:52:22.290 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+23:52:22.305 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+23:52:22.612 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 46 of 102M
+2024.02.07 23:52:22 WARN  no build tool detected in workspace '/home/ubuntu/Desktop/project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.02.07 23:52:23 WARN  Build server is not auto-connectable.
+févr. 07, 2024 11:52:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1
+2024.02.07 23:52:26 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.07 23:52:31 INFO  no build target found for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.07 23:52:37 INFO  time: code lens generation in 14s
+2024.02.07 23:52:37 INFO  time: code lens generation in 11s
+2024.02.07 23:52:37 INFO  time: code lens generation in 14s
+2024.02.08 00:41:02 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:41:05 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:41:08 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:41:09 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:41:31 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:41:35 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:42:11 ERROR Failed to tokenize input for semantic tokens for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+scala.meta.tokenizers.TokenizeException: <input>:37: error: unclosed string interpolation
+    val paht = s"hdfs://localhost:9000/uuser/ubuntu/off_raw/en.openfoodfacts.org.products.csv
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2024.02.08 00:42:11 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:42:11 ERROR Failed to tokenize input for semantic tokens for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+scala.meta.tokenizers.TokenizeException: <input>:37: error: unclosed string interpolation
+    val paht = s"hdfs://localhost:9000/uuser/ubuntu/off_raw/en.openfoodfacts.org.products.csv
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2024.02.08 00:42:14 ERROR Failed to tokenize input for semantic tokens for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+scala.meta.tokenizers.TokenizeException: <input>:37: error: unclosed string interpolation
+    val paht = s"hdfs://localhost:9000/user/ubuntu/off_raw/en.openfoodfacts.org.products.csv
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2024.02.08 00:42:14 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:42:14 ERROR Failed to tokenize input for semantic tokens for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+scala.meta.tokenizers.TokenizeException: <input>:37: error: unclosed string interpolation
+    val paht = s"hdfs://localhost:9000/user/ubuntu/off_raw/en.openfoodfacts.org.products.csv
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2024.02.08 00:42:18 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:42:28 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:42:29 INFO  time: code lens generation in 1.27s
+2024.02.08 00:42:35 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:45:02 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:51:39 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:51:41 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:52:52 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:54:23 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:54:24 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:54:42 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 00:55:00 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:01:53 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:02:06 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:02:16 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:02:16 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:04:59 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:05:20 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:05:26 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:05:29 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:05:33 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:05:35 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:05:37 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:07:52 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:07:55 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:07:56 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:07:58 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:07:59 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:02 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:05 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:12 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:22 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:25 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:36 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:53 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:08:55 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:09:31 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:09:35 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:09:38 ERROR Failed to tokenize input for semantic tokens for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+scala.meta.tokenizers.TokenizeException: <input>:142: error: unclosed comment
+   /* val dateDF = datajour
+   ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:52)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:71)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:313)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2024.02.08 01:09:38 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:09:38 ERROR Failed to tokenize input for semantic tokens for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+scala.meta.tokenizers.TokenizeException: <input>:142: error: unclosed comment
+   /* val dateDF = datajour
+   ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:52)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:71)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:313)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2024.02.08 01:09:53 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:10:00 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:10:04 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:10:30 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:10:50 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:10:51 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:10:54 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:11:00 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:11:07 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:11:09 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:11:11 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:11:15 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:12:10 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:12:15 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:12:23 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:12:49 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:12:51 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:12:54 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:01 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:05 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:07 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:08 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:13 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:15 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:41 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:45 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:13:55 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:01 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:03 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:06 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:12 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:18 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:26 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:14:28 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:18:00 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:18:02 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:18:04 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:25:28 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:43:15 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:44:25 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:48:28 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:49:13 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:49:26 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:49:27 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 01:57:37 INFO  Started: Metals version 1.2.1 in folders '/home/ubuntu/Desktop/project' for client Visual Studio Code 1.85.1.
+2024.02.08 01:57:37 INFO  time: initialize in 0.14s
+01:57:43.793 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+01:57:43.796 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+01:57:43.797 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+01:57:43.801 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+01:57:43.801 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+01:57:43.801 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+01:57:43.801 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+01:57:43.801 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+01:57:43.802 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/ubuntu/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+01:57:43.805 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+01:57:43.805 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+01:57:43.805 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+01:57:43.805 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+01:57:43.806 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+01:57:43.806 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+01:57:43.810 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:57:43.811 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+01:57:43.811 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+01:57:43.812 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+01:57:43.812 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+01:57:43.943 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/ubuntu/Desktop/project/.metals/metals (H2 2.2)
+01:57:43.944 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+01:57:43.944 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+01:57:43.945 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+01:57:43.945 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+01:57:43.952 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+01:57:43.954 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+01:57:43.954 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:57:43.968 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+01:57:43.975 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:57:43.987 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+01:57:43.987 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:57:43.987 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+01:57:43.987 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+01:57:43.987 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+01:57:43.988 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+01:57:43.989 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:57:43.989 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+01:57:43.989 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+01:57:43.989 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+01:57:44.011 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.041s)
+01:57:44.015 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+01:57:44.023 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+01:57:44.049 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+01:57:44.298 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 47 of 102M
+2024.02.08 01:57:46 WARN  no build tool detected in workspace '/home/ubuntu/Desktop/project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.02.08 01:57:46 WARN  Build server is not auto-connectable.
+2024.02.08 01:58:03 INFO  no build target found for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.08 01:58:22 INFO  time: code lens generation in 35s
+2024.02.08 01:58:22 INFO  time: code lens generation in 35s
+2024.02.08 02:02:00 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+févr. 08, 2024 2:03:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 23
+2024.02.08 02:04:46 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:04:47 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:04:50 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:04:51 INFO  time: code lens generation in 2.3s
+2024.02.08 02:04:51 INFO  time: code lens generation in 2.87s
+2024.02.08 02:05:23 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:07:07 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:07:56 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:07:57 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:08:02 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:08:10 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:20:28 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:20:30 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:20:32 INFO  time: code lens generation in 5.08s
+2024.02.08 02:20:32 INFO  time: code lens generation in 4.14s
+2024.02.08 02:20:32 INFO  time: code lens generation in 2.84s
+2024.02.08 02:20:34 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:20:40 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:20:47 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:21:47 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:21:48 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:21:59 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:22:03 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:22:06 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:22:07 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:22:53 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:23:15 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:23:18 WARN  no build target for: /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala
+2024.02.08 02:33:59 INFO  Shutting down server
+2024.02.08 02:33:59 INFO  shutting down Metals
+2024.02.08 02:34:39 INFO  Started: Metals version 1.2.1 in folders '/home/ubuntu/Desktop/project, /home/ubuntu/airflow' for client Visual Studio Code 1.85.1.
+2024.02.08 02:34:39 INFO  time: initialize in 0.24s
+02:34:41.627 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+02:34:41.633 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+02:34:41.633 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+02:34:41.637 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+02:34:41.637 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+02:34:41.637 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+02:34:41.637 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+02:34:41.637 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+02:34:41.638 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/ubuntu/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+02:34:41.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+02:34:41.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+02:34:41.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+02:34:41.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+02:34:41.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+02:34:41.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+02:34:41.649 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+02:34:41.649 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+02:34:41.650 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+02:34:41.651 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+02:34:41.651 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+02:34:41.773 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/ubuntu/Desktop/project/.metals/metals (H2 2.2)
+02:34:41.773 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+02:34:41.773 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+02:34:41.775 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+02:34:41.775 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+02:34:41.781 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+02:34:41.783 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+02:34:41.784 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+02:34:41.796 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+02:34:41.802 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+02:34:41.819 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+02:34:41.819 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+02:34:41.819 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+02:34:41.819 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+02:34:41.820 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+02:34:41.821 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+02:34:41.822 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+02:34:41.822 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+02:34:41.822 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+02:34:41.822 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+02:34:41.846 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.048s)
+02:34:41.850 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+02:34:41.862 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+02:34:41.875 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+02:34:41.923 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 46 of 102M
+2024.02.08 02:34:43 WARN  no build tool detected in workspace '/home/ubuntu/Desktop/project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.02.08 02:34:43 WARN  Build server is not auto-connectable.
+2024.02.08 02:34:49 INFO  no build target found for /home/ubuntu/Desktop/project/jobs/job1/scala/src/main/scala/mnmc/MnMcount.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.08 02:34:55 INFO  time: code lens generation in 11s
